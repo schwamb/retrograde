@@ -92,10 +92,10 @@ function isInArray(array, value) {
 result = isInArray(array, today);
 
 if (result === true){
-    result = "Mars is in Retrograde."
+    result = "Yes."
 }
 else{
-    result = "Mars is NOT in Retrograde."
+    result = "No."
 }
 
 // if (testDate === array[1]){
@@ -104,5 +104,4 @@ else{
 // else{
 //     document.write("false")
 // }
-
-document.write(result)
+document.getElementById('log').innerHTML += result;
